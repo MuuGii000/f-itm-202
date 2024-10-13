@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хувийн мэдээлэл</title><link rel="stylesheet" href="./style5.css">
+    
+</head>
+<body>
+    <div style="text-align: center;">
+        <img src="1111111.jpg" alt="Photo" width="150" height="150">
+    </div>
+
+<form>
+    <label for="lastname">Овог:</label>
+    <input type="text" id="lastname" name="lastname" maxlength="30" >
+
+    <label for="firstname">Нэр:</label>
+    <input type="text" id="firstname" name="firstname" maxlength="30">
+
+    <label for="dob">Төрсөн огноо</label>
+    <label for="dob">Өдөр:</label>
+    <input type="text" id="day" name="day" maxlength="30">
+    <label for="dob">Сар:</label>
+    <input type="text" id="month" name="month" maxlength="30">
+    <label for="dob">Он:</label>
+    <input type="text" id="year" name="year" maxlength="30">
+   
+
+    <label for="email">Мэйл хаяг:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="phone">Утасны дугаар:</label>
+    <input type="text" id="phone" name="phone" maxlength="10">
+
+    <label>Хүйс:</label>
+    <div class="radio-group">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Эр</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Эм</label>
+    </div>
+
+    <label for="address">Гэрийн хаяг:</label>
+   
+    <input type="text" id="address" name="address" maxlength="60">
+
+    <label for="city">Хот:</label>
+    <input type="text" id="city" name="city" maxlength="30">
+
+    <label for="district">Дүүрэг:</label>
+    <input type="text" id="district" name="district" maxlength="30">
+
+    <label>Хобби:</label>
+    <div class="checkbox-group">
+        <input type="checkbox" id="painting" name="hobby" value="painting">
+        <label for="painting">Зураг зурах</label>
+        <input type="checkbox" id="singing" name="hobby" value="singing">
+        <label for="singing">Дуулах</label>
+        <input type="checkbox" id="dance" name="hobby" value="dance">
+        <label for="dance">Бүжиглэх</label>
+        <input type="checkbox" id="cooking" name="hobby" value="cooking">
+        <label for="cooking">Хоол хийх</label>
+        <input type="checkbox" id="other" name="hobby" value="other">
+        <label for="other">Бусад</label>
+    </div>
+
+    <label>Боловсрол:</label>
+    <table>
+        <thead>
+            <tr>
+                <th>Гэрчилгээ </th>
+                <th>Боловсрол</th>
+                <th>Элссэн он</th>
+                <th>Төгссөн он</th>
+                <th>Төгссөн сургууль</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Бүрэн дунд</td>
+                <td>
+                    <select name="enroll1">
+                        <option value="">Он</option>
+                        <script>
+                            for(let i = 2000; i <= new Date().getFullYear(); i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+                </td>
+                <td>
+                    <select name="graduate1">
+                        <option value="">Он</option>
+                        <script>
+                            for(let i = 2000; i <= new Date().getFullYear(); i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+                </td>
+                <td><input type="text" name="school1"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Бакалавр</td>
+                <td>
+                    <select name="enroll2">
+                        <option value="">Он</option>
+                        <option value="1900">1900</option>
+                        <option value="1901">1901 on</option>
+                        <script>
+                            for(let i = 2000; i <= new Date().getFullYear(); i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+                </td>
+                <td>
+                    <select name="graduate2">
+                        <option value="">Он</option>
+                        <script>
+                            for(let i = 2000; i <= new Date().getFullYear(); i++) {
+                                document.write(`<option value="${i}">${i}</option>`);
+                            }
+                        </script>
+                    </select>
+                </td>
+                <td><input type="text" name="school2"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="buttons">
+        <input type="submit" value="Баталгаажуулах">
+        <input type="reset" value="Цэвэрлэх">
+    </div>
+</form>
+
+</body>
+</html>

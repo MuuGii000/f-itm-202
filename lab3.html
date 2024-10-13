@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <title>Хэрэглэгчийн Мэдээлэл Авах Хуудас</title>
+</head>
+<body>
+
+<h2>Хэрэглэгчийн Мэдээлэл Авах Хуудас</h2>
+<form method="POST">
+    <div>
+        <label for="ner">Нэр</label>
+        <input type="text" id="ner" name="ner" required placeholder="Нэрээ бичнэ үү..." minlength="2" maxlength="5">
+    </div>
+    <div>
+        <label for="nas">Нас</label>
+        <input type="number" id="nas" name="nas" min="0" max="99" step="0.1"placeholder="Насаа бичнэ үү...">
+    </div>
+    <div>
+        <label for="tursun_ognoo">Төрсөн огноо</label>
+        <input type="date" id="tursun_ognoo" name="tursun_ognoo">
+    </div>
+    <div>
+        <label for="tsag">Цаг</label>
+        <input type="time" id="tsag" name="tsag">
+    </div>
+    <div>
+        <label for="hobby">Хобби</label><br>
+        <input type="checkbox" name="hobby" value="1" > Дугуй унах<br>
+        <input type="checkbox" name="hobby" value="2" > Унтах<br>
+        <input type="checkbox" name="hobby" value="3" > Идэх<br>
+        <input type="checkbox" name="hobby" value="4" > Ном унших<br>
+        <input type="checkbox" name="hobby" value="5" > Кино үзэх<br>
+        <input type="checkbox" name="hobby" value="6" > Хөгжим сонсох
+    </div>
+    <div>
+        <label for="huis">Хүйс</label><br>
+        <input type="radio" id="er" name="huis" value="1"> <label for="er">Эрэгтэй</label><br>
+        <input type="radio" id="em" name="huis" value="0"> <label for="em">Эмэгтэй</label>
+    </div>
+    <div>
+        <label for="unguu">Өнгө сонгох</label>
+        <input type="color" id="unguu" name="unguu" value="#FF00FF">
+    </div>
+    <div>
+        <label for="zurag">Зураг оруулах</label>
+        <input type="file" id="zurag" name="zurag">
+    </div>
+    <div>
+        <label for="sar">Сар сонгох</label>
+        <input type="month" id="sar" name="sar">
+    </div>
+    <div>
+        <label for="email">Имэйл</label>
+        <input type="email" id="email" name="tsahim_shuudan" value="@must.edu.mn">
+    </div>
+    <div>
+        <label for="nuuts_ug">Нууц үг</label>
+        <input type="password" id="nuuts_ug" name="nuuts_ug">
+    </div>
+    <div>
+        <label for="range">Түвшин</label>
+        <input type="range" id="range" name="range">
+    </div>
+    <div>
+        <label for="utas">Утасны дугаар</label>
+        <input type="tel" id="utas" name="utas">
+    </div>
+    <div>
+        <label for="doloo_honog">Долоо хоног сонгох</label>
+        <input type="week" id="doloo_honog" name="doloo_honog">
+    </div>
+    <div>
+        <label for="minii_tuhai">Миний тухай</label>
+        <textarea id="minii_tuhai" name="minii_tuhai"></textarea>
+    </div>
+    <div>
+        <label for="songolt">Сонголт</label>
+        <select id="songolt" name="songolt" size="10" multiple>
+            <option value="">-Сонгох-</option>
+            <option value="1">Баянзүрх</option>
+            <option value="2">Сүхбаатар</option>
+            <option value="3">Чингэлтэй</option>
+            <option value="4">Сонгинохайрхан</option>
+        </select>
+    </div>
+    <div>
+        <button type="submit">Өгөгдөл илгээх</button>
+        <button type="reset">Цэвэрлэх</button>
+    </div>
+</form>
+
+<video width="320" height="240" controls autoplay loop muted poster="images/sample.jpg">
+    <source src="TRISHNA.mp4" type="video/mp4">
+    <source src="TRISHNA.mp4" type="video/mkv">
+    Танай вэб хөтөч дээр видео тоглуулах боломжгүй байна
+</video>
+
+
+<audio controls>
+    <source src="san.mp3" type="audio/mpeg">
+    Танай вэб хөтөч дээр аудио тоглуулах боломжгүй байна
+</audio>
+
+</body>
+</html>
